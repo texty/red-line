@@ -1,0 +1,162 @@
+@import "mq";
+@import "footer";
+
+
+//// Media query
+//$mq-mobile: (min-device-width : 320px) and (max-device-width : 480px); // Smartphones (portrait and landscape)
+//$mq-iPads: (min-device-width : 768px) and (max-device-width : 1024px); // iPads (portrait and landscape)
+//$mq-desktops: (min-width : 1224px); // Desktops and laptops
+//$mq-large: (min-width : 1824px); //Big screens
+
+
+$red: #cd5553;
+
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+}
+
+p, li {
+  font-size:14px;
+}
+.block {
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns: 15% 50px 50px auto 36%;
+  grid-template-rows:  20vh 20vh 30vh 10vh;
+
+  @media #{$mq-iPads}, #{$mq-mobile} {
+    grid-template-columns: 15% 20px 20px auto 36%;
+
+  }
+}
+
+.block1 {
+  grid-row: 1/-1;
+  background-color: #cd5553;
+  grid-column: 1/3;
+  height:80vh;
+
+}
+
+
+.block2 {
+  grid-row: 1/-1;
+  grid-column: 3/6;
+  position:relative;
+  background-color: #cd5553;
+  height:80vh;
+  display:grid;
+  margin-bottom: 50px;
+  //grid-template-columns: ;
+}
+
+.portreit {
+  background-blend-mode: lighten;
+  position:absolute;
+  top:0;
+  left:60%;
+  width:36%;
+}
+
+
+.crop {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  width:200px;
+  height:200px;
+  z-index: 200;
+  overflow:hidden;
+  border-radius: 5px;
+
+  @media #{$mq-iPads}, #{$mq-mobile} {
+    width:100px;
+    height:100px;
+
+  }
+}
+
+.photo {
+  width:100%;
+
+}
+
+
+h2 {
+  color:white;
+}
+
+.audio {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  width:80%;
+  z-index: 200;
+  justify-content: flex-end;
+}
+
+#timeline, #timeline2{
+  width: 80%;
+  height: 15px;
+  //margin-top: 10%;
+  float: left;
+  border-bottom:3px solid white;
+  border-radius: 5px;
+  //background: rgba(245, 245, 245, 0.3);
+
+}
+#playhead, #playhead2 {
+  width:50px;
+  margin-top: -50px;
+
+}
+
+
+
+
+.playcont {
+  grid-row: 1/-1;
+  grid-column: 2/4;
+  height:80vh;
+  //background-color: #cd5553;
+  align-items: center;
+  z-index: 200;
+
+}
+
+#pButton, #pButton2 {
+  margin-left: 5px;
+  align-self: center;
+  margin-top: 150px;
+  height: 100px;
+  width: 100px;
+  border: none;
+  background-color: $red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //background-position: center;
+  //float:left;
+  outline:none;
+  z-index: 300;
+
+  @media #{$mq-iPads}, #{$mq-mobile} {
+    height: 40px;
+    width: 40px;
+
+  }
+}
+
+.play { background: url('../img/play_button.svg') ;}
+.pause{ background: url('../img/pause_button.svg') ;}
+
+
+//.line {
+//  grid-column: 2/3;
+//  grid-row: 1/-1;
+//  border-right: 10px solid white;
+//  z-index: 200;
+//}
+
+
+

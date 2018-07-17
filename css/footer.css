@@ -1,0 +1,76 @@
+/*
+Error: Undefined variable: "$brk-xlarge".
+        on line 57 of footer.scss
+
+52:   color: orange;
+53: }
+54: 
+55: .links0 {
+56: 
+57:   @media #{$brk-xlarge},
+58:   #{$brk-large},
+59:   #{$brk-medium},
+60:   #{$brk-narrow} {
+61:     grid-column: 2 / 3;
+62:     grid-row: 1 / 2;
+
+Backtrace:
+footer.scss:57
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/interpolation.rb:170:in `_perform'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:555:in `block in run_interp_no_strip'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:553:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:553:in `run_interp_no_strip'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:560:in `run_interp'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:525:in `visit_media'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin.rb:82:in `update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/2.3.0/gems/sass-3.5.5/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$brk-xlarge\".\A         on line 57 of footer.scss\A \A 52:   color: orange;\A 53: }\A 54: \A 55: .links0 {\A 56: \A 57:   @media #{$brk-xlarge},\A 58:   #{$brk-large},\A 59:   #{$brk-medium},\A 60:   #{$brk-narrow} {\A 61:     grid-column: 2 / 3;\A 62:     grid-row: 1 / 2;"; }
