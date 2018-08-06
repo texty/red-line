@@ -1,6 +1,4 @@
-/** {*/
-  /*border: 0.5px solid black;*/
-/*}*/
+/** {   border: 0.5px solid lightsalmon; }*/
 
 .read-more {
   grid-column: 1 / -1;
@@ -139,14 +137,16 @@ p, li {
   grid-gap: 10px;
   grid-template-columns: 15% 50px 50px auto 36%;
   grid-template-rows: 20vh 20vh 30vh 10vh;
-  background-color: #cd5553;
+  /*background-color: #cd5553;*/
   /*background-image: url("../img/red/01_mykhailo-red.jpg");*/
   /*width: 100%;*/
   background-repeat: no-repeat;
 }
-  @media (min-width: 768px) and (max-width: 1024px), (min-width: 320px) and (max-width: 480px) {
+  @media
+  /*(min-width: 768px) and (max-width: 1024px), */
+  (min-width: 320px) and (max-width: 768px) {
     .block {
-      grid-template-columns: 15% 20px 20px auto 36%; } }
+      grid-template-columns: 5% 20px 20px auto 36%; } }
 
 .block1 {
   grid-row: 1/-1;
@@ -159,7 +159,7 @@ p, li {
   grid-template-columns: auto 40%;
   grid-row: 1/-1;
   grid-column: 3/6;
-  /*background-color: #cd5553;*/
+  background-color: #cd5553;
   height: 80vh;
   margin-bottom: 50px; }
 
@@ -192,10 +192,17 @@ p, li {
   z-index: 200;
   overflow: hidden;
   border-radius: 5px; }
-  @media (min-width: 768px) and (max-width: 1024px), (min-width: 320px) and (max-width: 480px) {
+  @media (max-width: 768px) and (min-width: 450px) {
     .crop {
-      width: 100px;
-      height: 100px; } }
+      width: 150px;
+      height: 150px; }
+  }
+  @media (max-width: 450px) and (min-width: 400px) {
+    .crop {
+      width: 130px;
+      height: 130px;
+    }
+  }
 
 .photo {
   width: 100%; }
@@ -240,7 +247,9 @@ p, li {
   background-repeat: no-repeat;
   outline: none;
   z-index: 300; }
-  @media (min-width: 768px) and (max-width: 1024px), (min-width: 320px) and (max-width: 480px) {
+  @media
+  /*(  min-width: 768px) and (max-width: 1024px),  !* закоментити *!*/
+  (min-width: 320px) and (max-width: 768px) {
     #pButton, #pButton2 {
       height: 40px;
       width: 40px; } }
@@ -255,9 +264,12 @@ p, li {
 
 .container {
   display: grid;
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: 20% auto 20%; }
 
-}
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 15% auto 15%;} }
+
 
 .main-text {
   grid-column: 2/3;
