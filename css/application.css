@@ -1,5 +1,5 @@
 /** {   border: 0.5px solid lightsalmon; }*/
-
+/**/
 .read-more {
   grid-column: 1 / -1;
   grid-row: 4 / 5;
@@ -130,7 +130,7 @@ body {
 
 p, li {
   font-size: 1.5em;
-  line-height: 2;  }
+  line-height: 1.8;  }
 
 .block {
   display: grid;
@@ -146,7 +146,8 @@ p, li {
   /*(min-width: 768px) and (max-width: 1024px), */
   (min-width: 320px) and (max-width: 768px) {
     .block {
-      grid-template-columns: 5% 20px 20px auto 36%; } }
+      grid-template-columns: 5% 20px 20px auto 36%;
+      grid-gap: 5px} }
 
 .block1 {
   grid-row: 1/-1;
@@ -252,7 +253,8 @@ p, li {
   (min-width: 320px) and (max-width: 768px) {
     #pButton, #pButton2 {
       height: 40px;
-      width: 40px; } }
+      width: 40px;
+      margin-left: 2.5px; } }
 
 .play {
   background: url("../img/play_button.svg"); }
@@ -277,7 +279,33 @@ p, li {
 }
 
 .main-text h3 {
-  font-size: 2.8em;
+  font-size: 2.1em;
   /*color: #012233;*/
   margin-bottom: 28px;
+}
+
+.credits {
+  font-size: 1.1em;
+}
+
+.subtitle {
+  font-size: 1.1em;
+
+}
+
+.publ {
+  margin-bottom: 50px;
+}
+
+header img {
+  width: 500px;
+  height: 500px;
+}
+
+
+/*ФІГНЯ*/
+header {
+  background-image: url("../img/metro-title-static.jpg");
+  height: 70vh;
+  width: 100%;
 }
