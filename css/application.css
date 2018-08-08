@@ -290,7 +290,6 @@ p, li {
 
 .subtitle {
   font-size: 1.1em;
-  text-align: center;
 
 }
 
@@ -359,3 +358,9 @@ header {
 .fa-twitter:hover,
 .fa-facebook:hover {
   color: #ffffff; }
+
+.sub {
+  font-size: 1.1em;
+  text-align: center;
+
+}
