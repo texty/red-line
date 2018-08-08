@@ -129,8 +129,8 @@ body {
   font-size: 14px; }
 
 p, li {
-  font-size: 1.5em;
-  line-height: 1.8;  }
+  font-size: 1.4em;
+  line-height: 1.7;  }
 
 .block {
   display: grid;
@@ -208,9 +208,6 @@ p, li {
 .photo {
   width: 100%; }
 
-/*h2 {*/
-  /*color: white; }*/
-
 .audio {
   grid-column: 4/5;
   grid-row: 2/4;
@@ -267,10 +264,10 @@ p, li {
 .container {
   display: grid;
   grid-template-columns: 20% auto 20%; }
-
   @media (max-width: 768px) {
-    .container {
-      grid-template-columns: 15% auto 15%;} }
+    .container {grid-template-columns: 15% auto 15%;} }
+  @media (max-width: 400px) {
+    .container {grid-template-columns: 10% auto 10%} }
 
 
 .main-text {
@@ -307,8 +304,8 @@ header {
   /*position: relative;*/
   /*height: 100vh;*/
   grid-template-columns: 10% auto 10%;
-  grid-template-rows: 50px 70% auto;
-}
+  grid-template-rows: 50px 70% auto; }
+
 
 .header-left {
   grid-column: 1/2;
@@ -390,11 +387,21 @@ header {
 
 .title h1 {
   margin-left: 20%;
-  margin-top: 100px;
-  font-size: 3em;
-}
+  margin-top: 15%;
+  font-size: 3em;}
+  @media (max-width: 850px) {
+    .title h1 { margin-top: 10%; }   }
+  @media (max-width: 645px) {
+    .title h1 { font-size: 2.5em; } }
+  @media (max-width: 550px) {
+    .title h1 { font-size: 1.5em; margin-top: 10%; } }
 
 .title h2 {
   margin-left: 20%;
-  font-size: 2em;
-}
+  font-size: 2em; }
+  @media (max-width: 850px) {
+    .title h2 { font-size: 1.6em; } }
+  @media (max-width: 645px) {
+    .title h2 { font-size: 1.3em; } }
+  @media (max-width: 550px) {
+    .title h2 { font-size: 1em; } }
