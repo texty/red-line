@@ -116,3 +116,43 @@ var pButton2 = document.getElementById("pButton2"); // play button
 var playhead2 = document.getElementById("playhead2"); // playhead
 var timeline2 = document.getElementById("timeline2"); // timeline
 autooplay(music2, duration2, pButton2, playhead2, timeline2);
+
+
+// 03
+
+var music3 = document.getElementById("music3"); // id for audio element
+var duration3 = music3.duration; // Duration of audio clip, calculated here for embedding purposes
+var pButton3 = document.getElementById("pButton3"); // play button
+var playhead3 = document.getElementById("playhead3"); // playhead
+var timeline3 = document.getElementById("timeline3"); // timeline
+autooplay(music3, duration3, pButton3, playhead3, timeline3);
+
+
+// 04
+
+var music4 = document.getElementById("music4"); // id for audio element
+var duration4 = music4.duration; // Duration of audio clip, calculated here for embedding purposes
+var pButton4 = document.getElementById("pButton4"); // play button
+var playhead4 = document.getElementById("playhead4"); // playhead
+var timeline4 = document.getElementById("timeline4"); // timeline
+autooplay(music4, duration4, pButton4, playhead4, timeline4);
+
+
+// 05
+
+var music5 = document.getElementById("music5"); // id for audio element
+var duration5 = music5.duration; // Duration of audio clip, calculated here for embedding purposes
+var pButton5 = document.getElementById("pButton5"); // play button
+var playhead5 = document.getElementById("playhead5"); // playhead
+var timeline5 = document.getElementById("timeline5"); // timeline
+autooplay(music5, duration5, pButton5, playhead5, timeline5);
+
+
+// 06
+
+var music6 = document.getElementById("music6"); // id for audio element
+var duration6 = music6.duration; // Duration of audio clip, calculated here for embedding purposes
+var pButton6 = document.getElementById("pButton6"); // play button
+var playhead6 = document.getElementById("playhead6"); // playhead
+var timeline6 = document.getElementById("timeline6"); // timeline
+autooplay(music6, duration6, pButton6, playhead6, timeline6);
