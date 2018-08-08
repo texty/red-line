@@ -307,17 +307,22 @@ header {
   /*position: relative;*/
   /*height: 100vh;*/
   grid-template-columns: 10% auto 10%;
-  grid-template-rows: 70% auto;
+  grid-template-rows: 50px 70% auto;
 }
 
 .header-left {
   grid-column: 1/2;
-  grid-row: 1/-1;
+  grid-row: 2/3;
+}
+
+.header-img {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .header-right {
   grid-column: 3/4;
-  grid-row: 1/-1;
+  grid-row: 2/3;
 }
 
 .header-img img {
@@ -343,9 +348,11 @@ header {
 
 .social-icons {
   position: fixed;
-  padding-top: 10px;
+  display: inline-block;
+  top: 10px;
   z-index: 1000;
-  right: 15px; }
+  right: 5px;
+  width: 80px; }
 
 .fa-twitter,
 .fa-facebook {
@@ -362,5 +369,14 @@ header {
 .sub {
   font-size: 1.1em;
   text-align: center;
+}
 
+.twitter,
+.facebook {
+  width:30px;
+  padding: 5px;
+  color: #6c6c6c;
+  background: white;
+  float: right;
+  cursor: pointer;
 }
