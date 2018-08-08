@@ -148,9 +148,7 @@ p, li {
   /*width: 100%;*/
   background-repeat: no-repeat;
 }
-  @media
-  /*(min-width: 768px) and (max-width: 1024px), */
-  (min-width: 320px) and (max-width: 768px) {
+  @media (max-width: 768px) {
     .block {
       grid-template-columns: 5% 20px 20px auto 36%;
       grid-gap: 5px} }
@@ -160,6 +158,11 @@ p, li {
   background-color: #cd5553;
   grid-column: 1/3;
   height: 80vh; }
+@media (max-width: 768px) {
+  .block1 {
+    height: 70vh;
+  }
+}
 
 .block2 {
   display: grid;
@@ -169,6 +172,12 @@ p, li {
   background-color: #cd5553;
   height: 80vh;
   margin-bottom: 50px; }
+  @media (max-width: 768px) {
+    .block2 {
+      grid-template-columns: auto 50%;
+      height: 70vh;
+    }
+  }
 
 /*прописати @media для <768px*/
 
@@ -209,6 +218,11 @@ p, li {
       width: 130px;
       height: 130px;
     }
+  }
+  @media (max-width: 400px) {
+    .crop {
+    width: 100px;
+    height: 100px; }
   }
 
 .photo {
@@ -381,7 +395,6 @@ header {
   width:30px;
   padding: 5px;
   color: #6c6c6c;
-  background: white;
   float: right;
   cursor: pointer;
 }
