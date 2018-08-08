@@ -384,6 +384,9 @@ header {
   grid-column: 2/3;
   grid-row: 2/3;
 }
+  @media (max-width: 300px) {
+    .title { display: none }
+  }
 
 .title h1 {
   margin-left: 20%;
