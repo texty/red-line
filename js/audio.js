@@ -1,11 +1,6 @@
-/**
- * Created by yevheniia on 10.07.18.
- */
-
 
 //функція, що відповідає за аудіо програвач, аби кнопка в кожному блоці запускала потрібне аудіо
 var autooplay = function(music, duration, pButton, playhead, timeline) { 
-
 
     var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
@@ -21,7 +16,7 @@ var autooplay = function(music, duration, pButton, playhead, timeline) {
 
 
     function clickPercent(event) {
-        return (event.clientX - getPosition(timeline)) / timelineWidth;
+        return (event.clientX - getPosition(timeline1)) / timelineWidth;
     }
 
     playhead.addEventListener('mousedown', mouseDown, false);
@@ -103,17 +98,17 @@ var autooplay = function(music, duration, pButton, playhead, timeline) {
 
 
 
-//Перший чувак
+//01
 
-var music = document.getElementById("music"); // id for audio element
+var music = document.getElementById("music1"); // id for audio element
 var duration = music.duration; // Duration of audio clip, calculated here for embedding purposes
-var pButton = document.getElementById("pButton"); // play button
-var playhead = document.getElementById("playhead"); // playhead
-var timeline = document.getElementById("timeline"); // timeline
+var pButton = document.getElementById("pButton1"); // play button
+var playhead = document.getElementById("playhead1"); // playhead
+var timeline = document.getElementById("timeline1"); // timeline
 autooplay(music, duration, pButton, playhead, timeline);
 
 
-// Другий чувак
+// 02
 
 var music2 = document.getElementById("music2"); // id for audio element
 var duration2 = music2.duration; // Duration of audio clip, calculated here for embedding purposes

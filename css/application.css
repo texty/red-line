@@ -218,14 +218,14 @@ p, li {
   z-index: 200;
   justify-content: flex-end; }
 
-#timeline, #timeline2 {
+#timeline1, #timeline2, #timeline3, #timeline4, #timeline5, #timeline6 {
   width: 80%;
   height: 15px;
   float: left;
   border-bottom: 3px solid white;
   border-radius: 5px; }
 
-#playhead, #playhead2 {
+#playhead1, #playhead2, #playhead3, #playhead4, #playhead5, #playhead6 {
   width: 50px;
   margin-top: -50px; }
 
@@ -236,7 +236,7 @@ p, li {
   align-items: center;
   z-index: 200; }
 
-#pButton, #pButton2 {
+#pButton1, #pButton2, #pButton3, #pButton4, #pButton5, #pButton6 {
   margin-left: 5px;
   align-self: center;
   margin-top: 150px;
@@ -251,7 +251,7 @@ p, li {
   @media
   /*(  min-width: 768px) and (max-width: 1024px),  !* закоментити *!*/
   (min-width: 320px) and (max-width: 768px) {
-    #pButton, #pButton2 {
+    #pButton1, #pButton2, #pButton3, #pButton4, #pButton5, #pButton6 {
       height: 40px;
       width: 40px;
       margin-left: 2.5px; } }
@@ -302,10 +302,33 @@ header img {
   height: 500px;
 }
 
-
-/*ФІГНЯ*/
 header {
-  background-image: url("../img/metro-title-static.jpg");
-  height: 70vh;
+  display: grid;
+  /*position: relative;*/
+  height: 100vh;
+  grid-template-columns: 10% auto 10%;
+  grid-template-rows: 70% auto;
+}
+
+.header-left {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.header-right {
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
+
+.header-img img {
+  /*background-image: url("../img/metro-title-static.jpg");*/
   width: 100%;
+  height: 100%;
+
+}
+
+.space {
+  grid-column: 1/-1 ;
+  grid-row: 2/3;
+  color: #FFF;
 }
