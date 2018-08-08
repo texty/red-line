@@ -172,7 +172,7 @@ p, li {
 
 /*прописати @media для <768px*/
 
-#photo-container {
+.photo-container {
   grid-column: 2/-1;
   position: relative;
 }
