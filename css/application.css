@@ -332,3 +332,29 @@ header {
   grid-row: 2/3;
   color: #FFF;
 }
+
+/* ======== HEADER ======== */
+.logo {
+  position: fixed;
+  float: left;
+  margin: 15px 0 0 15px;
+  z-index: 1000;
+}
+
+.social-icons {
+  position: fixed;
+  padding-top: 10px;
+  z-index: 1000;
+  right: 15px; }
+
+.fa-twitter,
+.fa-facebook {
+  padding: 5px;
+  color: #6c6c6c;
+  background: white;
+  float: right;
+  margin: 5px 10px 0px 0px;
+  cursor: pointer; }
+.fa-twitter:hover,
+.fa-facebook:hover {
+  color: #ffffff; }
