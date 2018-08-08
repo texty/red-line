@@ -165,7 +165,7 @@ p, li {
   grid-template-columns: auto 40%;
   grid-row: 1/-1;
   grid-column: 3/6;
-  background-color: #cd5553;
+  /*background-color: #cd5553;*/
   height: 80vh;
   margin-bottom: 50px; }
 
